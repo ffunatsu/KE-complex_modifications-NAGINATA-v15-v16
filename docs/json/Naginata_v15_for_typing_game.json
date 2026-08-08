@@ -266,6 +266,20 @@
                 {"key_code":"f"},{"key_code":"u","repeat":false}
             ]
         },
+        {"description":"(シンクロ2) Sp, ふ","type":"basic",
+            "conditions":[
+                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
+            "parameters":{"basic.simultaneous_threshold_milliseconds":60},
+            "from":{"simultaneous":[
+                    {"key_code":"spacebar"},
+                    {"key_code":"semicolon"}
+                ],"simultaneous_options":{"key_down_order":"strict_inverse",
+                "to_after_key_up":[{"set_variable":{"name":"shifted","value":0}}]}
+            },
+            "to":[{"set_variable":{"name":"shifted","value":1}},
+                {"key_code":"f"},{"key_code":"u","repeat":false}
+            ]
+        },
         {"description":"(シンクロ) Sp, ほ","type":"basic",
             "conditions":[
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
@@ -378,6 +392,20 @@
                 {"key_code":"m"},{"key_code":"u","repeat":false}
             ]
         },
+        {"description":"(シンクロ2) Sp, む","type":"basic",
+            "conditions":[
+                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
+            "parameters":{"basic.simultaneous_threshold_milliseconds":60},
+            "from":{"simultaneous":[
+                    {"key_code":"comma"},
+                    {"key_code":"spacebar"}
+                ],"simultaneous_options":{"key_down_order":"strict_inverse",
+                "to_after_key_up":[{"set_variable":{"name":"shifted","value":0}}]}
+            },
+            "to":[{"set_variable":{"name":"shifted","value":1}},
+                {"key_code":"m"},{"key_code":"u","repeat":false}
+            ]
+        },
         {"description":"(シンクロ) Sp, わ","type":"basic",
             "conditions":[
                 {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
@@ -385,6 +413,20 @@
             "from":{"simultaneous":[
                     {"key_code":"spacebar"},
                     {"key_code":"period"}
+                ],"simultaneous_options":{"key_down_order":"strict_inverse",
+                "to_after_key_up":[{"set_variable":{"name":"shifted","value":0}}]}
+            },
+            "to":[{"set_variable":{"name":"shifted","value":1}},
+                {"key_code":"w"},{"key_code":"a","repeat":false}
+            ]
+        },
+        {"description":"(シンクロ2) Sp, わ","type":"basic",
+            "conditions":[
+                {"input_sources":[{"input_mode_id":"Roman$"}],"type":"input_source_unless"}],
+            "parameters":{"basic.simultaneous_threshold_milliseconds":60},
+            "from":{"simultaneous":[
+                    {"key_code":"period"},
+                    {"key_code":"spacebar"}
                 ],"simultaneous_options":{"key_down_order":"strict_inverse",
                 "to_after_key_up":[{"set_variable":{"name":"shifted","value":0}}]}
             },
